@@ -32,7 +32,22 @@ describe("#wordSearch()", function() {
       ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
       ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
     ], 'SEINFELD')
-
+    
     assert.isTrue(result);
+
   });
+  it('it should return true when the word exists vertically', function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'O', 'I', 'N', 'F', 'E', 'L', 'D'],
+      ['Y', 'R', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['H', 'D', 'J', 'T', 'E', 'V', 'R', 'G'],
+      ['W', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'E', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'WORD')
+    assert.isTrue(result);
+  })
 });
